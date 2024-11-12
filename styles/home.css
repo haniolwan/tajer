@@ -1,0 +1,43 @@
+:root {
+  --primary-color: #30b57e;
+  --box-shadow: rgb(0 0 2 /35%) 0px 20px 30px -10px;
+  --logo-color: #09244b;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  background: linear-gradient(to bottom, #e9fff6, transparent);
+}
+
+section {
+  margin: 6rem 0;
+}
+
+.navbar {
+  width: 100%;
+  padding: 100px 150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* py-2 px-12 rounded-lg hover:opacity-80 */
+
+.join-button {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 20px 80px;
+  border-radius: 16px;
+  background: #30b57e;
+}
+
+.join-button:hover {
+  opacity: 80%;
+}
