@@ -1,18 +1,94 @@
 .site {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.container {
-  max-width: 1100px;
-  width: 100%;
-  padding: 0 30px;
-  margin: 0 auto;
+
+.aside {
+  position: relative;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 0.6rem;
 }
 
-.testi {
-  margin: 0 auto;
+.aside .title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--logo-color);
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.aside .description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 5px;
+  opacity: 50% !important;
+  width: 30rem;
+  text-align: start;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.aside .name button {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  border: 1px solid var(--primary-color);
+  padding: 8px 8px 8px 20px;
+  gap: 8px;
+  border-radius: 8px;
+  transition: 0.3s background-color;
+}
+
+.aside .name span {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.aside .name button > img {
+  filter: grayscale(100%) sepia(100%) saturate(500%) hue-rotate(0deg);
+}
+
+.aside .name button:hover {
+  background: var(--primary-color);
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.aside .name button:hover .paper-airplane {
+  fill: white;
+}
+
+.paper-airplane {
+  width: 12px;
+  height: 12px;
+  fill: var(--primary-color);
+}
+.aside .name {
+  position: relative;
+  width: fit-content;
+  line-height: 1;
+  transition: transform 1s 0.2s, opacity 1s 0.3s;
+}
+
+.aside .name h4 {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--primary-color);
+  opacity: 0.8;
+}
+
+.aside .name p {
+  font-size: 12px;
+  text-align: right;
 }
 
 .testi .head {
@@ -26,12 +102,9 @@
 }
 
 .testi .wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: inline-block;
   gap: 60px;
   padding: 30px 0;
-  justify-content: space-between;
 }
 
 .testi .thumbnail {
@@ -46,7 +119,7 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  transform: scale(2);
+  transform: scale(1.5);
   transition: transform 0.5s;
 }
 
@@ -72,123 +145,6 @@
   border-radius: 33% 67% 50% 50% / 50% 14% 86% 50%;
 }
 
-.testi .aside {
-  position: relative;
-  padding-top: 15px;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-end;
-}
-
-.testi .aside .title {
-  font-size: 62px;
-  font-weight: 700;
-  color: var(--logo-color);
-  line-height: 1.3;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  margin-top: 20px;
-  margin-bottom: 15px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.testi .aside .description {
-  font-size: 38px;
-  font-weight: 400;
-  line-height: 1.5;
-  margin-top: 5px;
-  text-align: start;
-  opacity: 50% !important;
-}
-
-.testi .aside > p {
-  position: relative;
-  font-size: 14px;
-  line-height: normal;
-  margin-bottom: 30px;
-  opacity: 0;
-  transform: translateX(10%);
-  transition: transform 1s, opacity 1s;
-}
-
-.testi .swiper-slide-active .aside > p {
-  transform: translateX(0);
-  opacity: 1;
-}
-
-.testi .aside > p::before,
-.testi .aside > p::after {
-  font-family: serif;
-  font-size: 80px;
-  font-weight: 800;
-  line-height: 1;
-  position: absolute;
-  color: teal;
-  height: 40px;
-  z-index: -1;
-}
-
-.testi .aside .name button {
-  display: flex;
-  align-items: center;
-  flex-direction: row-reverse;
-  border: 1px solid var(--primary-color);
-  padding: 20px 20px 20px 90px;
-  gap: 8px;
-  border-radius: 8px;
-  transition: 0.3s background-color;
-}
-
-.testi .aside .name span {
-  font-size: 32px;
-  font-weight: 600;
-}
-
-.testi .aside .name button > img {
-  filter: grayscale(100%) sepia(100%) saturate(500%) hue-rotate(0deg);
-}
-
-.testi .aside .name button:hover {
-  background: var(--primary-color);
-  color: white;
-  transition: background-color 0.3s;
-}
-
-.testi .aside .name button:hover .paper-airplane {
-  fill: white;
-}
-
-.paper-airplane {
-  width: 20px;
-  height: 20px;
-  fill: var(--primary-color);
-}
-.testi .aside .name {
-  position: relative;
-  width: fit-content;
-  line-height: 1;
-  opacity: 0;
-  transform: translateX(30px);
-  transition: transform 1s 0.2s, opacity 1s 0.3s;
-}
-
-.testi .swiper-slide-active .aside .name {
-  transform: translateX(0);
-  opacity: 1;
-}
-
-.testi .aside .name h4 {
-  font-size: 22px;
-  font-weight: 800;
-  color: var(--primary-color);
-  opacity: 0.8;
-}
-
-.testi .aside .name p {
-  font-size: 12px;
-  text-align: right;
-}
-
 .testi :is(.swiper-button-next, .swiper-button-prev) {
   background-color: teal;
   top: 35%;
@@ -199,49 +155,69 @@
   box-shadow: var(--box-shadow);
 }
 
-.testi :is(.swiper-button-next, .swiper-button-prev)::after {
+:is(.swiper-button-next, .swiper-button-prev)::after {
   font-size: 16px;
   font-weight: 800;
   color: white;
 }
 
-.testi .swiper-pagination span {
-  background-color: teal;
+.swiper-pagination span {
+  background-color: var(--primary-color);
   transition: width 0.3s;
   opacity: 1;
 }
 
-.testi .swiper-pagination .swiper-pagination-bullet {
-  width: 48px;
+.swiper-pagination .swiper-pagination-bullet {
+  width: 42px;
   border-radius: 4px;
   height: 6px;
   background-color: var(--primary-color);
   background: rgb(48, 181, 126, 40%);
 }
 
-.testi .swiper-pagination .swiper-pagination-bullet-active {
+.swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--primary-color);
 }
 
-.testi .swiper-pagination {
+.swiper-pagination {
   position: relative;
   display: flex;
-  align-self: flex-end;
+  justify-content: center;
   margin-top: 2rem;
-  padding: 30px 150px;
 }
 
-@media screen and (min-width: 768px) {
+.testi {
+  width: 22rem;
+  height: 22rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testi .thumbnail {
+  width: 16rem;
+  height: 16rem;
+}
+
+@media screen and (min-width: 1072px) {
   .testi .wrapper {
-    flex-direction: row;
-    padding: 30px 150px;
+    padding: 2rem 8rem;
+  }
+
+  .testi {
+    width: 36rem;
+    margin: 0;
+  }
+
+  .swiper-pagination {
+    display: flex;
+    align-self: flex-end;
+    margin-top: 6rem;
+    padding-right: 1rem;
   }
 
   .testi .thumbnail {
-    /* width: 200px;
-    height: 200px; */
-    width: 22rem;
-    height: 22rem;
+    width: 24rem;
+    height: 24rem;
   }
 
   .testi .swiper-slide-active .name {
