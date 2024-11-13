@@ -187,8 +187,8 @@
 }
 
 .testi {
-  width: 22rem;
-  height: 22rem;
+  width: 24rem;
+  height: 24rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -199,10 +199,6 @@
 }
 
 @media screen and (min-width: 1072px) {
-  .testi .wrapper {
-    padding: 2rem 8rem;
-  }
-
   .testi {
     width: 36rem;
     margin: 0;
