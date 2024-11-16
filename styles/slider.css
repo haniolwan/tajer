@@ -184,6 +184,7 @@
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+  z-index: 1;
 }
 
 .testi {
@@ -206,7 +207,8 @@
 
   .swiper-pagination {
     display: flex;
-    align-self: flex-end;
+    justify-content: start;
+    /* align-self: flex-end; */
     margin-top: 6rem;
     padding-right: 1rem;
   }

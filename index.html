@@ -27,19 +27,37 @@
     <link rel="stylesheet" href="./styles/about.css" />
     <link rel="stylesheet" href="./styles/features.css" />
     <link rel="stylesheet" href="./styles/services.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/loader.css" />
   </head>
   <body>
+    <!-- loading screen -->
+    <div class="loader"></div>
     <!-- Navbar -->
     <header class="text-white p-4">
       <div
         class="flex items-center gap-10 md:gap-0 flex-col md:flex-row md:justify-between p-8"
       >
-        <img class="logo-image" src="./assets/nav-logo.svg" alt="logo" />
-        <button id="joinButton" class="join-button shadow-md text-bold">
+        <img data-i18n-key="navbar-logo" class="logo-image" src="" alt="logo" />
+
+        <button
+          data-i18n-key="join_button"
+          id="joinButton"
+          class="join-button shadow-md text-bold"
+        >
           إنضم الآن
         </button>
       </div>
     </header>
+
+    <div data-i18n-switcher id="local-changer" class="icon-bar">
+      <button href="#" class="arabic" onclick="changeLanguage('ar')">
+        عربي
+      </button>
+      <button href="#" class="english" onclick="changeLanguage('en')">
+        English
+      </button>
+    </div>
 
     <!-- Hero Section -->
     <section class="p-10">
@@ -47,8 +65,8 @@
         <div
           class="aside text-center md:text-start items-center md:items-start"
         >
-          <p class="title">أهلاً بكم في تاجر</p>
-          <p class="description">
+          <p data-i18n-key="heading_title" class="title">أهلاً بكم في تاجر</p>
+          <p data-i18n-key="heading_description" class="description">
             تاجر برو, شريك عملك الموثوق هذا النص هو مثال لنص يمكن استبداله بنفس
             تاجر برو, شريك عملك الموثوق هذا النص هو مثال لنص يمكن استبداله بنفس
             تاجر برو, شريك عملك الموثوق هذا النص هو مثال لنص يمكن استبداله بنفس
@@ -57,7 +75,7 @@
 
           <div class="name">
             <button>
-              <span> إنضم إلينا </span>
+              <span data-i18n-key="heading_join_button"> إنضم إلينا </span>
               <svg
                 class="paper-airplane"
                 width="800px"
@@ -95,19 +113,26 @@
           </div>
         </div>
       </div>
-      <div class="swiper-pagination hidden lg:inline-block"></div>
+      <div
+        class="swiper-pagination hidden lg:inline-block lg:justify-start"
+      ></div>
     </section>
 
     <!-- About Section -->
     <section class="about p-10">
       <div class="about-box">
         <div class="heading">
-          <img class="w-28 h-28" src="./assets/nav-logo.svg" alt="logo" />
+          <img
+            class="w-28 h-28"
+            src="./assets/nav-logo.svg"
+            alt="logo"
+            data-i18n-key="navbar-logo"
+          />
         </div>
         <div class="description">
-          <h3>عن تاجـر</h3>
+          <h3 data-i18n-key="about_title">عن تاجـر</h3>
           <span class="line"></span>
-          <p>
+          <p data-i18n-key="about_description">
             هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا
             النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد
             من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
@@ -134,8 +159,8 @@
               />
             </svg>
           </div>
-          <h3 class="title">كفاءة وجودة</h3>
-          <p class="description">
+          <h3 class="title" data-i18n-key="feature1_title">كفاءة وجودة</h3>
+          <p class="description" data-i18n-key="feature1_description">
             هذا النص هو مثال لنص يمكن أن يستبدل في المساحة، تم توليده من مولد
             النص العربى.
           </p>
@@ -176,8 +201,8 @@
               </g>
             </svg>
           </div>
-          <h3 class="title">دقة الوقت</h3>
-          <p class="description">
+          <h3 class="title" data-i18n-key="feature2_title">دقة الوقت</h3>
+          <p class="description" data-i18n-key="feature2_title">
             تسليم الطلبات هو لنص يمكن أن يستبدل في المساحة، تم توليده من مولد
             النص العربى.
           </p>
@@ -204,8 +229,8 @@
             </svg>
           </div>
 
-          <h3 class="title">آمان ومصداقية</h3>
-          <p class="description">
+          <h3 class="title" data-i18n-key="feature3_title">آمان ومصداقية</h3>
+          <p class="description" data-i18n-key="feature3_title">
             هذا النص هو مثال لنص يمكن أن يستبدل في المساحة، تم توليده من مولد
             النص العربى.
           </p>
@@ -234,8 +259,8 @@
               />
             </svg>
           </div>
-          <h3 class="title">رؤية واضحة</h3>
-          <p class="description">
+          <h3 class="title" data-i18n-key="feature4_title">رؤية واضحة</h3>
+          <p class="description" data-i18n-key="feature4_title">
             هذا النص هو مثال لنص يمكن أن يستبدل في المساحة، تم توليده من مولد
             النص العربى.
           </p>
@@ -245,7 +270,7 @@
 
     <!-- Services Section -->
     <section class="services">
-      <h1>خدماتنا</h1>
+      <h1 data-i18n-key="services_title">خدماتنا</h1>
       <span class="line"></span>
       <div class="grid grid-cols-1 lg:grid-cols-2">
         <div class="box">
@@ -288,8 +313,10 @@
             <div class="small-colored-circle"></div>
           </div>
 
-          <h3 class="title">إدارة آلية التوصيل</h3>
-          <p class="description">
+          <h3 class="title" data-i18n-key="services1_title">
+            إدارة آلية التوصيل
+          </h3>
+          <p class="description" data-i18n-key="services1_description">
             طرق دفع آمنة منها تحويل بنكي، هذا النص هو مثال لنص يمكن أن يستبدل
             النص في نفس المساحة.
           </p>
@@ -332,8 +359,10 @@
             <div class="big-colored-circle"></div>
             <div class="small-colored-circle"></div>
           </div>
-          <h3 class="title">طرق دفع الكتروني</h3>
-          <p class="description">
+          <h3 class="title" data-i18n-key="services2_title">
+            طرق دفع الكتروني
+          </h3>
+          <p class="description" data-i18n-key="services2_description">
             هذا النص هو مثال لنص يمكن أن يستبدل هذا النص في نفس المساحة، لقد تم
             توليده من مولد النص العربى.
           </p>
@@ -357,8 +386,8 @@
             <div class="big-colored-circle"></div>
             <div class="small-colored-circle"></div>
           </div>
-          <h3 class="title">جودة منافسة</h3>
-          <p class="description">
+          <h3 class="title" data-i18n-key="services3_title">جودة منافسة</h3>
+          <p class="description" data-i18n-key="services3_description">
             هذا النص هو مثال لنص يمكن أن يستبدل هذا النص في نفس المساحة، لقد تم
             توليده من مولد النص العربى.
           </p>
@@ -396,8 +425,10 @@
             <div class="big-colored-circle"></div>
             <div class="small-colored-circle"></div>
           </div>
-          <h3 class="title">دعم فني وتقديم الاستشارة</h3>
-          <p class="description">
+          <h3 class="title" data-i18n-key="services4_title">
+            دعم فني وتقديم الاستشارة
+          </h3>
+          <p class="description" data-i18n-key="services4_description">
             هذا النص هو مثال لنص يمكن أن يستبدل النص في نفس المساحة، لقد تم
             توليده من مولد النص العربى.
           </p>
@@ -406,34 +437,59 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-blue-900 text-white py-6">
-      <div class="container mx-auto text-center">
-        <p>© 2023 Tajr, All Rights Reserved.</p>
+
+    <footer class="footer-distributed">
+      <div class="footer-right">
+        <p class="footer-links">
+          <a href="#" data-i18n-key="footer_menu1">الرئيسية</a>
+          ·
+          <a href="#" data-i18n-key="footer_menu2">عن تاجر</a>
+          ·
+          <a href="#" data-i18n-key="footer_menu3">أسئلة متكررة</a>
+          .
+          <a href="#" data-i18n-key="footer_menu4">الشروط والأحكام</a>
+        </p>
+
+        <p class="footer-company-name" data-i18n-key="footer_license">
+          Tajr © 2024
+        </p>
+      </div>
+
+      <div class="footer-left">
+        <p data-i18n-key="footer_contant_title">تواصل معنا</p>
+
+        <form id="myForm" action="#" method="post">
+          <input
+            type="text"
+            name="email"
+            placeholder="Email"
+            required
+            data-i18n-key="contact_email"
+          />
+          <textarea
+            name="message"
+            placeholder="Message"
+            required
+            data-i18n-key="contact_message"
+          ></textarea>
+          <div class="contact-button-container">
+            <button id="submitButton" data-i18n-key="email_send_button">
+              إرسال
+            </button>
+            <div id="spinner" class="lds-ring">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </form>
       </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const swiper = new Swiper(".swiper", {
-          // Optional parameters
-          direction: "horizontal",
-          autoHeight: true,
-          loop: false,
-          speed: 400,
-          autoplay: false,
-          parallax: true,
-
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          pagination: {
-            el: ".swiper-pagination",
-          },
-        });
-      });
-    </script>
+    <script src="script/swiper.js"></script>
+    <script src="script/emailSubmit.js"></script>
+    <script src="script/translations.js"></script>
+    <script></script>
   </body>
 </html>
