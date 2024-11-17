@@ -23,13 +23,61 @@
   "services3_description": "هذا النص هو مثال لنص يمكن أن يستبدل هذا النص في نفس المساحة، لقد تم توليده من مولد النص العربى.",
   "services4_title": "دعم فني وتقديم الاستشارة",
   "services4_description": "هذا النص هو مثال لنص يمكن أن يستبدل النص في نفس المساحة، لقد تم توليده من مولد النص العربى.",
+  "footer-logo": "./assets/footer-logo-ar.svg",
   "footer_menu1": "الرئيسية",
   "footer_menu2": "عن تاجر",
   "footer_menu3": "أسئلة متكررة",
   "footer_menu4": "الشروط والأحكام",
   "footer_license": "Tajr © 2024",
   "footer_contant_title": "تواصل معنا",
-  "contact_email": "ايميل",
-  "contact_message": "محتوى الرسالة",
-  "email_send_button": "إرسال"
+  "contact_us_title": "تواصل معنا",
+  "first_name_label": "الاسم الأول",
+  "last_name_label": "اسم العائلة",
+  "contact_email": "إيميل",
+  "company_label": "الشركة",
+  "contact_phone": "رقم الهاتف",
+  "contact_message": "الرسالة",
+  "email_send_button": "دعنا نتحدث",
+  "footer-title1": "ابدأ",
+  "footer-link1": "البدء",
+  "footer-link2": "التوثيق",
+  "footer-link3": "التثبيت",
+  "footer-company": "تجر برو",
+  "footer-link4": "اتصل",
+  "footer-link5": "الأخبار",
+  "footer-link6": "الوظائف",
+  "footer-title2": "قانوني",
+  "footer-link7": "إشعار الخصوصية",
+  "footer-link8": "شروط الاستخدام",
+  "footer-title3": "روابط سريعة",
+  "footer-link9": "مركز الدعم",
+  "footer-link10": "حالة الخدمة",
+  "footer-link11": "الأمان",
+  "footer-link12": "المدونة",
+  "footer-link13": "العملاء",
+  "footer-link14": "المراجعات",
+  "footer-chat-title": "لنتحدث",
+  "footer-question": "هل لديك سؤال دعم؟",
+  "footer-get-in-touch": "ابقَ على تواصل",
+  "footer-call-us": "اتصل بنا",
+  "footer-phone": "0124-64XXXX",
+  "common_questions": "استكشف الأسئلة الشائعة",
+  "faqData": [
+    {
+      "title": "كيف يمكنني البدء؟",
+      "description": "البدء سهل! قم بالتسجيل للحصول على حساب، وستتمكن من الوصول إلى ميزات منصتنا. لا يتطلب التسجيل الأولي بطاقة ائتمان."
+    },
+    {
+      "title": "ما هي هيكلية التسعير؟",
+      "description": "البدء سهل! قم بالتسجيل للحصول على حساب، وستتمكن من الوصول إلى ميزات منصتنا. لا يتطلب التسجيل الأولي بطاقة ائتمان."
+    },
+    {
+      "title": "ما نوع الدعم الذي تقدمه؟",
+      "description": "البدء سهل! قم بالتسجيل للحصول على حساب، وستتمكن من الوصول إلى ميزات منصتنا. لا يتطلب التسجيل الأولي بطاقة ائتمان."
+    },
+    {
+      "title": "هل يمكنني إلغاء اشتراكي في أي وقت؟",
+      "description": "البدء سهل! قم بالتسجيل للحصول على حساب، وستتمكن من الوصول إلى ميزات منصتنا. لا يتطلب التسجيل الأولي بطاقة ائتمان."
+    }
+  ]
 }

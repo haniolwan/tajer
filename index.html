@@ -202,7 +202,7 @@
             </svg>
           </div>
           <h3 class="title" data-i18n-key="feature2_title">دقة الوقت</h3>
-          <p class="description" data-i18n-key="feature2_title">
+          <p class="description" data-i18n-key="feature2_description">
             تسليم الطلبات هو لنص يمكن أن يستبدل في المساحة، تم توليده من مولد
             النص العربى.
           </p>
@@ -230,7 +230,7 @@
           </div>
 
           <h3 class="title" data-i18n-key="feature3_title">آمان ومصداقية</h3>
-          <p class="description" data-i18n-key="feature3_title">
+          <p class="description" data-i18n-key="feature3_description">
             هذا النص هو مثال لنص يمكن أن يستبدل في المساحة، تم توليده من مولد
             النص العربى.
           </p>
@@ -260,7 +260,7 @@
             </svg>
           </div>
           <h3 class="title" data-i18n-key="feature4_title">رؤية واضحة</h3>
-          <p class="description" data-i18n-key="feature4_title">
+          <p class="description" data-i18n-key="feature4_description">
             هذا النص هو مثال لنص يمكن أن يستبدل في المساحة، تم توليده من مولد
             النص العربى.
           </p>
@@ -436,47 +436,170 @@
       </div>
     </section>
 
-    <!-- Footer -->
-
-    <footer class="footer-distributed">
-      <div class="footer-right">
-        <p class="footer-links">
-          <a href="#" data-i18n-key="footer_menu1">الرئيسية</a>
-          ·
-          <a href="#" data-i18n-key="footer_menu2">عن تاجر</a>
-          ·
-          <a href="#" data-i18n-key="footer_menu3">أسئلة متكررة</a>
-          .
-          <a href="#" data-i18n-key="footer_menu4">الشروط والأحكام</a>
-        </p>
-
-        <p class="footer-company-name" data-i18n-key="footer_license">
-          Tajr © 2024
-        </p>
-      </div>
-
-      <div class="footer-left">
-        <p data-i18n-key="footer_contant_title">تواصل معنا</p>
-
-        <form id="myForm" action="#" method="post">
-          <input
-            type="text"
-            name="email"
-            placeholder="Email"
-            required
-            data-i18n-key="contact_email"
-          />
-          <textarea
-            name="message"
-            placeholder="Message"
-            required
-            data-i18n-key="contact_message"
-          ></textarea>
-          <div class="contact-button-container">
-            <button id="submitButton" data-i18n-key="email_send_button">
-              إرسال
+    <section>
+      <div class="isolate px-6 py-24 sm:py-32 lg:px-8">
+        <div
+          class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
+          aria-hidden="true"
+        >
+          <div
+            class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
+            style="
+              clip-path: polygon(
+                74.1% 44.1%,
+                100% 61.6%,
+                97.5% 26.9%,
+                85.5% 0.1%,
+                80.7% 2%,
+                72.5% 32.5%,
+                60.2% 62.4%,
+                52.4% 68.1%,
+                47.5% 58.3%,
+                45.2% 34.5%,
+                27.5% 76.7%,
+                0.1% 64.9%,
+                17.9% 100%,
+                27.6% 76.8%,
+                76.1% 97.7%,
+                74.1% 44.1%
+              );
+            "
+          ></div>
+        </div>
+        <div class="mx-auto max-w-2xl text-center">
+          <h2
+            class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+            data-i18n-key="contact_us_title"
+          >
+            Contact Us
+          </h2>
+        </div>
+        <form
+          id="myForm"
+          action="https://someapi.com"
+          method="post"
+          class="mx-auto mt-16 max-w-xl sm:mt-20"
+        >
+          <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+            <div>
+              <label
+                for="first-name"
+                class="block text-sm font-semibold leading-6 text-gray-900"
+                data-i18n-key="first_name_label"
+                >First name</label
+              >
+              <div class="mt-2.5">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autocomplete="given-name"
+                  class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  required
+                />
+              </div>
+            </div>
+            <div>
+              <label
+                for="last-name"
+                class="block text-sm font-semibold leading-6 text-gray-900"
+                data-i18n-key="last_name_label"
+                >Last name</label
+              >
+              <div class="mt-2.5">
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  autocomplete="family-name"
+                  class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  required
+                />
+              </div>
+            </div>
+            <div class="sm:col-span-2">
+              <label
+                for="company"
+                class="block text-sm font-semibold leading-6 text-gray-900"
+                data-i18n-key="company_label"
+                >Company</label
+              >
+              <div class="mt-2.5">
+                <input
+                  type="text"
+                  name="company"
+                  id="company"
+                  autocomplete="organization"
+                  class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  required
+                />
+              </div>
+            </div>
+            <div class="sm:col-span-2">
+              <label
+                for="email"
+                class="block text-sm font-semibold leading-6 text-gray-900"
+                data-i18n-key="contact_email"
+                >Email</label
+              >
+              <div class="mt-2.5">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  autocomplete="email"
+                  class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  required
+                />
+              </div>
+            </div>
+            <div class="sm:col-span-2">
+              <label
+                for="phone-number"
+                class="block text-sm font-semibold leading-6 text-gray-900"
+                data-i18n-key="contact_phone"
+                >Phone number</label
+              >
+              <div class="relative mt-2.5">
+                <input
+                  type="tel"
+                  name="phone-number"
+                  id="phone-number"
+                  autocomplete="tel"
+                  class="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  required
+                />
+              </div>
+            </div>
+            <div class="sm:col-span-2">
+              <label
+                for="message"
+                class="block text-sm font-semibold leading-6 text-gray-900"
+                data-i18n-key="contact_message"
+                >Message</label
+              >
+              <div class="mt-2.5">
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="4"
+                  class="resize-none block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  required
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="mt-10 flex justify-center relative">
+            <button
+              id="submitButton"
+              data-i18n-key="email_send_button"
+              type="submit"
+              class="w-50 rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              data-i18n-key="email_send_button"
+            >
+              Let's talk
             </button>
-            <div id="spinner" class="lds-ring">
+            <div id="spinner" class="lds-ring absolute">
               <div></div>
               <div></div>
               <div></div>
@@ -485,7 +608,191 @@
           </div>
         </form>
       </div>
-    </footer>
+    </section>
+
+    <!-- Footer -->
+    <div class="pg-footer">
+      <footer class="footer">
+        <svg
+          class="footer-wave-svg"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 100"
+          preserveAspectRatio="none"
+        >
+          <path
+            class="footer-wave-path"
+            d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"
+          ></path>
+        </svg>
+        <div class="footer-content">
+          <div class="footer-content-column">
+            <div class="footer-logo">
+              <a class="footer-logo-link" href="#">
+                <span class="hidden-link-text">LOGO</span>
+                <img data-i18n-key="footer-logo" />
+              </a>
+            </div>
+            <div class="footer-menu">
+              <h2 class="footer-menu-name" data-i18n-key="footer-title1">
+                Get Started
+              </h2>
+              <ul id="menu-get-started" class="footer-menu-list">
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-product"
+                >
+                  <a href="#" data-i18n-key="footer-link1">Start</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-product"
+                >
+                  <a href="#" data-i18n-key="footer-link2">Documentation</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-product"
+                >
+                  <a href="#" data-i18n-key="footer-link3">Installation</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-content-column">
+            <div class="footer-menu">
+              <h2 class="footer-menu-name" data-i18n-key="footer-company">
+                Tajr Pro
+              </h2>
+              <ul id="menu-company" class="footer-menu-list">
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page"
+                >
+                  <a href="#" data-i18n-key="footer-link4">Contact</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-taxonomy menu-item-object-category"
+                >
+                  <a href="#" data-i18n-key="footer-link5">News</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page"
+                >
+                  <a href="#" data-i18n-key="footer-link6">Careers</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-menu">
+              <h2 class="footer-menu-name" data-i18n-key="footer-title2">
+                Legal
+              </h2>
+              <ul id="menu-legal" class="footer-menu-list">
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434"
+                >
+                  <a href="#" data-i18n-key="footer-link7">Privacy Notice</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page"
+                >
+                  <a href="#" data-i18n-key="footer-link8">Terms of Use</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-content-column">
+            <div class="footer-menu">
+              <h2 class="footer-menu-name" data-i18n-key="footer-title3">
+                Quick Links
+              </h2>
+              <ul id="menu-quick-links" class="footer-menu-list">
+                <li
+                  class="menu-item menu-item-type-custom menu-item-object-custom"
+                >
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="#"
+                    data-i18n-key="footer-link9"
+                    >Support Center</a
+                  >
+                </li>
+                <li
+                  class="menu-item menu-item-type-custom menu-item-object-custom"
+                >
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="#"
+                    data-i18n-key="footer-link10"
+                    >Service Status</a
+                  >
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page"
+                >
+                  <a href="#" data-i18n-key="footer-link11">Security</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page"
+                >
+                  <a href="#" data-i18n-key="footer-link12">Blog</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type_archive menu-item-object-customer"
+                >
+                  <a href="#" data-i18n-key="footer-link13">Customers</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page"
+                >
+                  <a href="#" data-i18n-key="footer-link14">Reviews</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-content-column">
+            <div class="footer-call-to-action">
+              <h2
+                class="footer-call-to-action-title"
+                data-i18n-key="footer-chat-title"
+              >
+                Let's Chat
+              </h2>
+              <p
+                class="footer-call-to-action-description"
+                data-i18n-key="footer-question"
+              >
+                Have a support question?
+              </p>
+              <a
+                class="footer-call-to-action-button button"
+                href="#"
+                target="_self"
+                data-i18n-key="footer-get-in-touch"
+              >
+                Get in Touch
+              </a>
+            </div>
+            <div class="footer-call-to-action">
+              <h2
+                class="footer-call-to-action-title"
+                data-i18n-key="footer-call-us"
+              >
+                You Call Us
+              </h2>
+              <p class="footer-call-to-action-link-wrapper">
+                <a
+                  class="footer-call-to-action-link"
+                  href="tel:0124-64XXXX"
+                  target="_self"
+                  data-i18n-key="footer-phone"
+                >
+                  0124-64XXXX
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script/swiper.js"></script>
     <script src="script/emailSubmit.js"></script>
